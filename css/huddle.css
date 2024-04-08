@@ -34,11 +34,6 @@ body{
     font-size: 18px;
     font-family: "Poppins", sans-serif;
 }
-.container{ 
-    max-width: 100%;
-    width: 100%;
-    padding: 0px;
-}
 .header{
     position: relative;
     background-image: url(../imgs/bg-hero-desktop.svg);
@@ -66,7 +61,7 @@ body{
     cursor: pointer;
 }
 .header .image img{
-    width: 30%; /* Edit from 300px width to 35% FROM main Width */
+    width: 25%; /* Edit from 300px width to 35% FROM main Width */
     height: auto;
     position: absolute;
     right: 30px;
@@ -93,28 +88,33 @@ body{
     color: var(--secondary-color);
     font-size: 12px;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .grow{
     display: flex;
     justify-content: space-between;
     border:1px solid hsl(208deg 11% 55% / 14%);
     margin-top: 40px;
-    height: 240px;
-    width: 1000px;
-    margin-left: 50px;
+    height: 200px;
+    width: 100%;
 }
 .together{
-    margin-top: 30px;
-    width: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .grow h2{
-    margin-top: 30px;
     margin-left: 30px;
     font-size: 16px;
     font-weight: bold;
 }
 .grow p{
-    font-size: 14px;
-    margin-top: 30px;
+    font-size: 10px;
     margin-left: 30px;
     font-weight: 300;
 }
@@ -129,28 +129,29 @@ body{
     border:1px solid hsl(208deg 11% 55% / 14%);
     margin-top: 10px !important;
     height: 200px;
-    width: 1000px;
-    margin-left: 50px;
     align-items: center;
-    margin-right: 30px;
+    width: 100%;
 }
 .flow{
-    width: 40%;
+    width: 50%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .conversation h3{
-    margin-top: 30px;
     margin-left: 30px;
     font-size: 16px;
     font-weight: bold;
 }
 .conversation p{
-    font-size: 14px;
-    margin-top: 30px;
+    font-size: 10px;
     margin-left: 30px;
     font-weight: 300;
 }
 .conversation img{
-    width: 30%;
+    width: 200px;
     margin-top: 30px;
     padding-left: 15px;
 }
@@ -159,24 +160,20 @@ body{
     justify-content: space-between;
     border:1px solid hsl(208deg 11% 55% / 14%);
     margin-top: 10px !important;
-    height: 240px;
-    width: 1000px;
-    margin-left: 50px;
+    height: 200px;
     align-items: center;
+    width: 100%;
 }
 .us{
-    margin-top: 30px;
     width: 40%;
 }
 .users h4{
-    margin-top: 30px;
     margin-left: 30px;
     font-size: 16px;
     font-weight: bold;
 }
 .users p{
-    font-size: 14px;
-    margin-top: 30px;
+    font-size: 10px;
     margin-left: 30px;
     font-weight: 300;
 }
@@ -311,4 +308,35 @@ body{
 .space {  /* Add Space Class for spaceing between footer And last Section */
     height: 150px;
     width: 100%;
+}
+@media(max-width: 767px){
+    .header{
+
+    }
+    .grow{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 330px;
+    }
+    .conversation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 330px;
+    }
+    .conversation img,
+    .grow img,
+    .users img{
+        margin-bottom: 20px;
+    }
+    .users{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 330px;
+    }
 }
