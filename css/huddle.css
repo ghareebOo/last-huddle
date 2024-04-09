@@ -196,13 +196,7 @@ body{
     height: calc(100% - 5px);
     padding: 10px;
 }
-.footer_About { 
 
-
-
-
-
-}
 .footer_logo img{
    width: 35%;
 }
@@ -285,12 +279,14 @@ flex-direction: column;
 font-size: 13px;
 color: white;
 justify-content: center;
+
 }
 a { 
     width: 100%;
     text-decoration: none;
     color: white;
     margin: 10px;
+    text-align: center;
 }
 
 
