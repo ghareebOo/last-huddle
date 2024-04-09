@@ -286,6 +286,7 @@ a {
     justify-content: space-evenly;
     align-items: flex-end !important;
     margin-bottom: 50px;
+    gap: 10px;
 }
 .footer_so .so_links i { 
     font-size: 17px;
