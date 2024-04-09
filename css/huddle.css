@@ -182,133 +182,143 @@ body{
     margin-top: 20px;
     padding-right: 15px;
 }
-.footer{
+/* Code By HeshAmYasSeR */
+.footer { 
+    width: 100%;
+    height: 250px;
     background-color: var(--thrid-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer .footer_About , .footer_Box , .footer_det { 
+    width: calc(30% - 5px);
+    height: calc(100% - 5px);
+    padding: 10px;
+}
+.footer_About { 
+
+
+
+
+
+}
+.footer_logo img{
+   width: 35%;
+}
+.about_det { 
+    width: 100%;
+    height: calc(80% - 20px) !important;
+    padding: 5px;
+    display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.deat_box { 
     color: white;
-}
-.note{
-    position: absolute;
-    border: 1px solid white;
-    height: 120px;
-    background-color: white;
-    transform: translate(110%);
-    top: -50px;
-    width: 400px;
-    border-radius: 10px;
-}
-.note h5{
-    color: black;
-    margin-left: 30px;
-    font-size: 20px;
-    margin-top: 10px;
-}
-.note button{
-    background-color: var(--main-color);
-    width: 300px;
-    height: 50px;
-    border: none;
-    border-radius: 30px;
-    margin-left: 40px;
-    margin-top: 15px;
-}
-.footer .lg{
-    margin-left: 30px;
-    margin-top: 50px;
-    width: 120px;
-}
-.media{
-    font-size: 13px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 20% !important;
 }
-.details{
-    gap: 11px;
-    display: flex;
-    flex-direction: column;
-}
-.detailsScript{
-    display: flex;
-}
-.detailsScript img{
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.detailsScript .text{
-    font-size: 10px;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.detailsPhone{
-    display: flex;
-}
-.detailsPhone img{
-    margin-left: 30px;
-}
-.detailsPhone .ph{
-    font-size: 10px;
-    margin-left: 30px;
+.deat_box p { 
+    font-size: 12px;
+    width: calc(100% - 20px) ;
+    padding-left: 20px;
+    
 }
 
-.detailsMail{
-    display: flex;
+
+
+
+
+ .footer_Box { 
+width: calc(40% - 5px);
 }
-.detailsMail img{
-    margin-left: 30px;
-}
-.detailsMail .ma{
-    font-size: 10px;
-    margin-left: 30px;
-}
-.contact{
-    display: flex;
+.box-note { 
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-radius: 12px;
+    display: FLEX;
     flex-direction: column;
-    margin-top: 30px;
-}
-.ca{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-}
-.social{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-right: 30px;
-    list-style: none;
-    gap: 20px;
+    justify-content: space-evenly;
+    margin-top: -80px;
 }
-.social li{
-    border: 1px solid white;
-    border-radius: 100%;
-    width: 25px;
-    height: 25px;
+.box-note h3 { 
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.button{
+    color: black;
+    background-color:#ff1fa5;
+    width: 70%;
+    height: 50px;
+    border-radius: 12px;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: 1.1s ;
+    -webkit-transition: 1.1s ;
+    -moz-transition: 1.1s ;
+    -ms-transition: 1.1s ;
+    -o-transition: 1.1s ;
 }
-.social li:nth-child(2):hover{
-    color: var(--main-color);
-    cursor: pointer;
-    border-color: var(--main-color) ;
+.button:hover { 
+    transform: scale(1.1);
 }
-.copy{
-    position: absolute;
-    right: 0px;
-    bottom: -9px;
-    font-size: 6px;
-    margin-right: 10px;
-    padding-bottom: 20px;
-} 
+
+
+
+.footer_det { 
+display: flex;
+
+
+}
+.footer_links , .footer_links_two , .footer_so { 
+width: 30%;
+display: flex;
+flex-direction: column;
+font-size: 13px;
+color: white;
+justify-content: center;
+}
+a { 
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+
+.footer_so { 
+    width: 40%;
+    display: flex;
+}
+.footer_so .so_links { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end !important;
+    margin-bottom: 50px;
+    
+}
+.footer_so .so_links i { 
+    font-size: 17px;
+}
+.copy { 
+    width: 100%;
+    font-size: 9px;
+    text-align: center;
+}
 
 .space {  /* Add Space Class for spaceing between footer And last Section */
     height: 150px;
     width: 100%;
 }
+/* //Code By HeshAmYasSeR */
 @media(max-width: 767px){
     .header{
 
